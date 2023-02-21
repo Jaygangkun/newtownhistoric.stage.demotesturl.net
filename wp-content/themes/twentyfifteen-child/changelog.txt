@@ -1,0 +1,65 @@
+Changelog for Newtown Historic edits
+
+10/6/16
+	functions.php was added to twentyfifteen-child.
+	This added a function to display the "excerpt" field on the page-edit screen
+
+	content-search.php was added to twentyfifteen-child.
+	I cleaned up the search results display with a few minor edits: Supressed the display of thumbnail, and changed results titles to <h3>
+
+	Added a btn5 style to style.css
+
+10/8/16
+	Modified the logo placement for 2 different screen sizes:
+	@media screen and ( max-width:1272px ) {
+		.logo a:after {
+			left: -118px;
+			top: -44px;
+		}
+
+	@media screen and ( max-width:800px ) {
+		.logo a:after {
+			left: -118px;
+			top: -26px;
+		}
+		
+10/11/16
+	styles.css
+	Added a style for the house tour button tabs, htbtn
+	Added content aligncenter in the media 767 section
+	
+	index.php
+	Swapped out Market Day callout for House Tour callout
+
+10/17/16
+	added code to functions.php to prevent Yoast SEO from re-writing calendar page title
+	
+10/18/16
+	added code to functions.php to prevent empty form fields erasing values already stored in the mapped MailChimp MMERGE fields when updating an existing subscriber
+	
+11/1/16
+	added single-event.php to twentyfifteen-child/tribe-events/ folder. Supresses display of featured image in single event view.
+	
+	
+11/2/16
+	added single-event.php to twentyfifteen-child/tribe-events/list/ folder. Removes the venue hyperlink in the event list display. Also suppressed display of google maps link in the list display (Note, it's a different single-event.php file from the one one folder up)
+
+11/2/16
+	styles.css
+	Added a style for tribe-events-list to fix list view so that event description snippet appears to the right of the thumbnail again
+	
+11/3/16
+	functions.php
+	Added a function that changes the event link to the event website URL if that is set. (found at TRIBE support site)
+	
+11/4/16
+	functions.php
+	Added a function to block enumeration scans
+	
+10/23/17
+	index.php
+	Swapped out 3rd callout for House Tour callout
+	
+12/26/17
+	index.php
+	Swapped back to 10/23/17 version with Walking Tour Callout

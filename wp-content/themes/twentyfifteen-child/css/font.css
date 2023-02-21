@@ -1,0 +1,74 @@
+
+@font-face {
+	font-family:'BodoniSvtyTwoITCTTBold-Regular';
+	src: url('../fonts/BodoniSvtyTwoITCTTBold_gdi.eot');
+	src: url('../fonts/BodoniSvtyTwoITCTTBold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BodoniSvtyTwoITCTTBold_gdi.woff') format('woff'),
+		url('../fonts/BodoniSvtyTwoITCTTBold_gdi.ttf') format('truetype'),
+		url('../fonts/BodoniSvtyTwoITCTTBold_gdi.otf') format('opentype'),
+		url('../fonts/BodoniSvtyTwoITCTTBold_gdi.svg#BodoniSvtyTwoITCTTBold-Regular') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family:'ProximaNova-Bold';
+	src: url('../fonts/ProximaNova-Bold_gdi.eot');
+	src: url('../fonts/ProximaNova-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Bold_gdi.woff') format('woff'),
+		url('../fonts/ProximaNova-Bold_gdi.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Bold_gdi.otf') format('opentype'),
+		url('../fonts/ProximaNova-Bold_gdi.svg#ProximaNova-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family:'BodoniSvtyTwoSCITCTTBook-Regular';
+	src: url('../fonts/BodoniSvtyTwoSCITCTTBook_gdi.eot');
+	src: url('../fonts/BodoniSvtyTwoSCITCTTBook_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BodoniSvtyTwoSCITCTTBook_gdi.woff') format('woff'),
+		url('../fonts/BodoniSvtyTwoSCITCTTBook_gdi.ttf') format('truetype'),
+		url('../fonts/BodoniSvtyTwoSCITCTTBook_gdi.otf') format('opentype'),
+		url('../fonts/BodoniSvtyTwoSCITCTTBook_gdi.svg#BodoniSvtyTwoSCITCTTBook-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family:'ProximaNova-Regular';
+	src: url('../fonts/ProximaNova-Regular_gdi.eot');
+	src: url('../fonts/ProximaNova-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular_gdi.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular_gdi.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Regular_gdi.otf') format('opentype'),
+		url('../fonts/ProximaNova-Regular_gdi.svg#ProximaNova-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family:'ProximaNova-Semibold';
+	src: url('../fonts/ProximaNova-Semibold_gdi.eot');
+	src: url('../fonts/ProximaNova-Semibold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Semibold_gdi.woff') format('woff'),
+		url('../fonts/ProximaNova-Semibold_gdi.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Semibold_gdi.otf') format('opentype'),
+		url('../fonts/ProximaNova-Semibold_gdi.svg#ProximaNova-Semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family:'GothamLight-Regular';
+	src: url('../fonts/GothamLight_gdi.eot');
+	src: url('../fonts/GothamLight_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamLight_gdi.woff') format('woff'),
+		url('../fonts/GothamLight_gdi.ttf') format('truetype'),
+		url('../fonts/GothamLight_gdi.otf') format('opentype'),
+		url('../fonts/GothamLight_gdi.svg#GothamLight-Regular') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+/*@font-face {font-family: "Bodoni SvtyTwo ITC TT";
+    src: url("http://db.onlinewebfonts.com/t/8bc773512e829a52d207976b43c0ecca.eot");
+    src: url("http://db.onlinewebfonts.com/t/8bc773512e829a52d207976b43c0ecca.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/8bc773512e829a52d207976b43c0ecca.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/8bc773512e829a52d207976b43c0ecca.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/8bc773512e829a52d207976b43c0ecca.svg#Bodoni SvtyTwo ITC TT") format("svg");
+}*/

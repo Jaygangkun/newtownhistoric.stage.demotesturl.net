@@ -1,0 +1,1598 @@
+@import "../twentyfifteen/style.css";
+/*
+ Theme Name:   Newtown Historic
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+@font-face {
+    font-family : 'P22DeclrPRO';
+    src         : url(fonts/P22DeclrPRO.eot);
+    src         : url(fonts/P22DeclrPRO.eot?#iefix) format("embedded-opentype"), url(fonts/P22DeclrPRO.woff) format("woff"), url(fonts/P22DeclrPRO.svg) format("svg");
+    font-weight : 400;
+    font-style  : normal;
+}
+* {
+    max-height : 100000px;
+}
+body {
+    margin                   : 0;
+    color                    : #152542;
+    font                     : 17px/24px proxima-nova, Arial, Helvetica, sans-serif;
+    background               : #fff;
+    -webkit-text-size-adjust : 100%;
+    -ms-text-size-adjust     : none;
+    min-width                : 1194px;
+}
+img {
+    border-style : none;
+}
+a {
+    text-decoration : none;
+    color           : #152542;
+}
+input, textarea, select {
+    font           : 100% proxima-nova, Arial, Helvetica, sans-serif;
+    vertical-align : middle;
+    color          : #000;
+}
+form, fieldset {
+    margin       : 0;
+    padding      : 0;
+    border-style : none;
+}
+header, footer, article, section, hgroup, nav, figure, aside {
+    display : block;
+}
+input[type="text"], input[type="password"], input[type="file"], input[type="submit"], input[type="search"], input[type="email"], textarea {
+    border-radius      : 0;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    box-sizing         : border-box;
+}
+input[type="submit"]:hover {
+    cursor : pointer;
+}
+#wrapper {
+    position : relative;
+    overflow : hidden;
+}
+.container {
+    max-width : 1194px;
+    margin    : 0 auto;
+}
+.container:after {
+    display : block;
+    clear   : both;
+    content : "";
+}
+.topbar {
+    background : #444c57;
+    padding    : 7px 0;
+}
+body .search {
+    float      : right;
+    width      : 215px;
+    background : #fff;
+    box-sizing : border-box;
+    background : url(images/ico-search.png) no-repeat #fff 8px 6px;
+    padding    : 0 0 0 22px;
+    margin     : 0 0 0 56px;
+}
+body .search input[type="text"] {
+    float       : left;
+    width       : 65.5%;
+    background  : none;
+    border      : none;
+    height      : 26px;
+    padding     : 5px 10px;
+    font-size   : 13px;
+    line-height : 16px;
+    color       : #000;
+}
+body .search input[type="submit"] {
+    float       : right;
+    width       : 34%;
+    background  : #2c3743;
+    color       : #fff;
+    height      : 26px;
+    line-height : 20px;
+    font-size   : 12px;
+    text-align  : center;
+    border      : none;
+    font-family : 'proxima-nova';
+}
+body .search input[type="submit"]:hover {
+    background : #9e6b6c;
+}
+.alertBar {
+    background     : #ff0000 none repeat scroll 0 0;
+    color          : #fff;
+    font-family    : "proxima-nova";
+    font-size      : 15px;
+    font-weight    : bold;
+    padding        : 5px 10px;
+    text-align     : center;
+    text-transform : none;
+}
+.top-nav {
+    float   : right;
+    padding : 4px 0 0;
+}
+.top-nav ul {
+    margin         : 0;
+    padding        : 0;
+    list-style     : none;
+    font-family    : 'proxima-nova';
+    font-weight    : 700;
+    font-size      : 14px;
+    line-height    : 17px;
+    text-transform : uppercase;
+    color          : #fff;
+    letter-spacing : 1px;
+}
+.top-nav ul li {
+    float  : left;
+    margin : 0 0 0 56px;
+}
+.top-nav ul li a {
+    color          : #fff;
+    padding-bottom : 1em;
+}
+.top-nav > ul > li:hover > a, .top-nav > ul > li.current-menu-ancestor > a, .top-nav > ul > li.current-menu-item > a, #nav > ul > li:hover > a, #nav > ul > li.current-menu-item > a, #nav > ul > li.current-menu-ancestor > a {
+    color : #9e6b6c;
+}
+.top-nav ul li ul {
+    position   : absolute;
+    min-width  : 200px;
+    background : #4a5c6f;
+    display    : none;
+    z-index    : 999;
+    margin     : 0;
+    top        : 40px;
+}
+.alertBar + .topbar .top-nav ul li ul {
+    top: 74px;
+}
+
+.top-nav ul li:hover ul {
+    display : block;
+}
+.top-nav ul li ul li {
+    display       : block;
+    padding       : 0;
+    font-size     : 13px;
+    text-align    : left;
+    height        : auto;
+    float         : none;
+    margin        : 0 !important;
+    border-bottom : 1px solid #333;
+}
+.top-nav ul li ul li a, #nav ul ul li a {
+    color       : #fff;
+    padding     : 1.2em 10px;
+    text-align  : left;
+    display     : block;
+    line-height : 1em;
+}
+#nav ul ul li a:hover, .top-nav ul ul li a:hover {
+    background : #9e6b6c;
+}
+.top-nav ul li:hover ul li ul {
+    display : none;
+    left    : 99%;
+    top     : 0;
+}
+.top-nav ul li:hover ul li:hover ul {
+    display    : block;
+    background : #444C57;
+    z-index    : 10000;
+}
+.header-right ul li ul li:hover a {
+    color : #c36d16 !important;
+}
+.top-nav ul li:hover ul li:hover ul li a {
+    color : #000 !important;
+}
+.top-nav ul li:hover ul li:hover ul li a:hover {
+    color : #c36d16 !important;
+}
+#nav .menu li:last-child ul {
+    right : 0;
+    left  : inherit;
+}
+.header-content {
+    padding : 18px 0 12px;
+}
+.logo {
+    float        : left;
+    padding-left : 90px;
+}
+.logo a {
+    position : relative;
+    display  : block;
+}
+.logo a:after {
+    position   : absolute;
+    left       : -125px;
+    top        : -35px;
+    background : url(images/logo_1.png) no-repeat;
+    width      : 107px;
+    height     : 107px;
+    content    : "";
+    z-index    : 999;
+}
+.logo a:hover:after {
+    background-position : 0 -116px;
+}
+.logo img {
+    display : block;
+}
+#nav {
+    float   : right;
+    padding : 7px 0 13px;
+}
+#nav ul {
+    margin         : 0;
+    padding        : 0;
+    list-style     : none;
+    text-align     : right;
+    font-family    : 'proxima-nova';
+    font-weight    : 700;
+    font-size      : 16px;
+    line-height    : 20px;
+    text-transform : uppercase;
+    letter-spacing : 1px;
+}
+#nav ul li {
+    display        : inline-block;
+    vertical-align : top;
+    margin         : 0 0 -25px 79px;
+    position       : relative;
+    padding        : 0 0 25px;
+}
+#nav ul li a {
+    color : #4a5c6f;
+}
+#nav ul ul {
+    margin      : 0;
+    padding     : 0;
+    list-style  : none;
+    position    : absolute;
+    left        : 0;
+    width       : 230px;
+    top         : 100%;
+    text-align  : center;
+    z-index     : 999;
+    background  : #4a5c6f;
+    line-height : 24px;
+    font-size   : 14px;
+    display     : none;
+}
+#nav ul li:hover ul {
+    display : block;
+}
+#nav ul ul li {
+    margin        : 0 !important;
+    padding       : 0 !important;
+    border-bottom : 1px solid #333;
+    display       : block;
+}
+.visual {
+    position : relative;
+}
+.visual img {
+    display : block;
+    width   : 100%;
+    height  : auto;
+}
+.visual .container {
+    height   : 100%;
+    position : absolute;
+    left     : 0;
+    right    : 0;
+    width    : 100%;
+    margin   : 0 auto;
+}
+.visual.internal .container {
+    height : auto;
+    bottom : 0;
+}
+.visual .soliloquy-caption {
+    position : absolute;
+    left     : 0;
+    right    : 0;
+    top      : 0;
+    bottom   : 0;
+}
+.soliloquy-container .soliloquy-caption.soliloquy-caption-bottom {
+    top : 0;
+}
+.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+    background-color : transparent !important;
+    padding          : 0 !important;
+}
+#soliloquy-container-626 {
+    max-width  : 100% !important;
+    max-height : 700px !important;
+}
+.visual .inner {
+    display : table;
+    width   : 100%;
+    height  : 100%;
+}
+.visual .inner2 {
+    display        : table-cell;
+    vertical-align : middle;
+    text-align     : center;
+    color          : #fff;
+}
+.visual h1 {
+    margin      : 0 auto;
+    font-weight : 400;
+    font-size   : 0;
+    line-height : 0;
+    color       : #fff;
+    background  : url(images/heading1.png) no-repeat;
+    width       : 743px;
+    height      : 152px;
+}
+.visual span {
+    display        : block;
+    position       : relative;
+    font-family    : 'BodoniSvtyTwoITCTTBold-Regular';
+    font-size      : 44px;
+    line-height    : 45px;
+    text-transform : uppercase;
+    letter-spacing : 2px;
+    margin         : -51px 0 0;
+    padding        : 0 54px 0 0;
+    text-shadow    : -1px -1px 15px rgba(10, 10, 10, 1);
+}
+.section1 {
+    padding : 34px 0 10px;
+}
+.section1 .holder {
+    position    : relative;
+    padding     : 0 10% 39px;
+    color       : #444c57;
+    line-height : 30px;
+    font-size   : 16px;
+}
+.section1 .holder p {
+    margin   : 0 0 30px;
+    position : relative;
+    z-index  : 99;
+}
+.section1 .holder:after {
+    position   : absolute;
+    right      : -73px;
+    background : url(images/logo2.jpg) no-repeat;
+    width      : 334px;
+    height     : 336px;
+    content    : "";
+    top        : 0;
+}
+.section1 h2 {
+    color          : #784e4c;
+    font-size      : 48px;
+    line-height    : 52px;
+    text-align     : center;
+    font-family    : "Bodoni SvtyTwo ITC TT";
+    margin         : 0 0 17px;
+    text-transform : none;
+    padding        : 0 0 0 33px;
+    position       : relative;
+    z-index        : 99;
+}
+.btn {
+    display        : block;
+    margin         : 0 auto;
+    font-family    : 'BodoniSvtyTwoITCTTBold-Regular';
+    font-size      : 17px;
+    line-height    : 20px;
+    text-align     : center;
+    width          : 134px;
+    color          : #fff;
+    padding        : 14px 0;
+    background     : #9e6b6c;
+    letter-spacing : 1px;
+    position       : relative;
+    z-index        : 99;
+    text-shadow    : 0 1px 0 #7e5656;
+    transition     : background 0.3s linear;
+}
+.btn:hover {
+    background : #2c3743;
+}
+.btn5 {
+    display        : block;
+    margin         : 0 auto;
+    font-family    : 'BodoniSvtyTwoITCTTBold-Regular';
+    font-size      : 17px;
+    line-height    : 20px;
+    text-align     : center;
+    width          : 230px;
+    color          : #fff;
+    padding        : 14px 0;
+    background     : #9e6b6c;
+    letter-spacing : 1px;
+    position       : relative;
+    z-index        : 99;
+    text-shadow    : 0 1px 0 #7e5656;
+    transition     : background 0.3s linear;
+}
+.btn5:hover {
+    background : #2c3743;
+}
+.box .img-holder a:hover .btn .btn5 {
+    background : #2c3743;
+}
+.box-holder {
+    overflow : hidden;
+}
+.box-holder .box {
+    float       : left;
+    width       : 32%;
+    margin      : 0 0 25px 20px;
+    line-height : 30px;
+    font-size   : 16px;
+}
+.box-holder .box:first-child {
+    margin-left : 0;
+}
+.box-holder .box .img-holder {
+    position   : relative;
+    margin     : 0 0 22px;
+    background : black;
+}
+.box-holder .box .img-holder img {
+    display    : block;
+    width      : 100%;
+    height     : auto;
+    opacity    : 0.6;
+    transition : opacity 0.3s linear;
+}
+.box .img-holder .inner {
+    display : table;
+    width   : 100%;
+    height  : 100%;
+}
+.box .img-holder .inner2 {
+    display        : table-cell;
+    vertical-align : middle;
+    text-align     : center;
+    color          : #fff;
+}
+.box .img-holder .title {
+    display     : block;
+    font-family : 'BodoniSvtyTwoITCTTBold-Regular';
+    color       : #fff;
+    font-size   : 37px;
+    line-height : 40px;
+    margin      : 0 0 5px;
+}
+.box .img-holder a {
+    display : block;
+}
+.box .img-holder a:hover img {
+    opacity    : .45;
+    -ms-filter : "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+}
+.box .img-holder .cap {
+    position : absolute;
+    left     : 0;
+    right    : 0;
+    top      : 0;
+    bottom   : 0;
+}
+.box p {
+    padding : 0 18px;
+    color   : #444c57;
+    margin  : 0;
+}
+.section2 {
+    position   : relative;
+    background : #efe4e2;
+    padding    : 32px 0 42px;
+}
+.section2 h2 {
+    color       : #784e4c;
+    font-size   : 48px;
+    line-height : 56px;
+    margin      : 0 0 30px;
+    overflow    : hidden;
+    font-family : "Bodoni SvtyTwo ITC TT";
+    font-weight : 400;
+}
+.section2 h2 span {
+    position       : relative;
+    display        : inline-block;
+    vertical-align : top;
+    padding-right  : 13px;
+}
+.section2 h2 span:after {
+    position   : absolute;
+    height     : 1px;
+    top        : 50%;
+    right      : 0;
+    padding    : 0 9999px 0 0;
+    margin     : 0 -9999px 0 0;
+    content    : "";
+    background : #995a4a;
+}
+.section2 .row {
+    overflow : hidden;
+    margin   : 0 0 26px;
+    padding  : 0 65px 0 50px;
+}
+.section2 .img {
+    float  : left;
+    margin : 0 38px 0 0;
+    width  : 27.7%;
+}
+.section2 .img img {
+    width   : 100%;
+    display : block;
+    height  : auto;
+}
+.section2 .description {
+    overflow    : hidden;
+    font-size   : 16px;
+    color       : #444c57;
+    line-height : 30px;
+    text-shadow : 0 1px 0 #fff;
+}
+.section2 .description p {
+    margin : 0;
+}
+.section2 .description h3 {
+    font-family    : 'BodoniSvtyTwoITCTTBold-Regular';
+    color          : #4a5c6f;
+    font-size      : 24px;
+    line-height    : 28px;
+    text-transform : uppercase;
+    margin         : 0 0 3px;
+    letter-spacing : 1px;
+}
+.section2 .description .more {
+    font-family    : 'proxima-nova';
+    font-weight    : 700;
+    font-size      : 20px;
+    line-height    : 24px;
+    color          : #4a5c6f;
+    text-transform : uppercase;
+    letter-spacing : 1px;
+}
+.section2 .description .more:hover {
+    color : #9e6b6c;
+}
+.section3 .description .more {
+    font-weight    : 700;
+    display        : block;
+    font-size      : 20px;
+    line-height    : 24px;
+    text-transform : uppercase;
+    letter-spacing : 1px;
+}
+.section3 .description .more:hover {
+    color : #9e6b6c;
+}
+.btn2 {
+    float          : right;
+    background     : url(images/ico.png) no-repeat 20px 7px #9e6b6c;
+    color          : #fff;
+    font-family    : 'BodoniSvtyTwoITCTTBold-Regular';
+    font-size      : 17px;
+    height         : 47px;
+    line-height    : 47px;
+    width          : 227px;
+    box-sizing     : border-box;
+    padding-left   : 40px;
+    text-align     : center;
+    position       : relative;
+    margin-top     : -12px;
+    letter-spacing : 1px;
+    padding-left   : 47px;
+    text-shadow    : 0 1px 0 #7e5656;
+}
+.btn2:hover {
+    background-color : #2c3743;
+}
+.htbtn {
+    display        : block;
+    background     : url(images/htbtn2.png) no-repeat 0px 0px #ef4035;
+    color          : #fff;
+    font-family    : 'BodoniSvtyTwoITCTTBold-Regular';
+    font-size      : 17px;
+    height         : 47px;
+    line-height    : 47px;
+    width          : 227px;
+    box-sizing     : border-box;
+    padding-left   : 40px;
+    text-align     : center;
+    position       : relative;
+    letter-spacing : 1px;
+    padding-left   : 77px;
+    text-shadow    : 0 1px 0 #7e5656;
+}
+.htbtn:hover {
+    background-color : #2c3743;
+}
+a.htbtn {
+    border-bottom : 0px;
+}
+.section3 {
+    padding : 34px 0 37px;
+}
+.section3 h2 {
+    color       : #4a5c6f;
+    font-size   : 48px;
+    line-height : 52px;
+    margin      : 0 0 28px;
+    overflow    : hidden;
+    font-family : "Bodoni SvtyTwo ITC TT";
+    font-weight : 400;
+}
+.section3 h2 span {
+    position       : relative;
+    display        : inline-block;
+    vertical-align : top;
+    padding-right  : 25px;
+}
+.section3 h2 span:after {
+    position   : absolute;
+    height     : 1px;
+    top        : 50%;
+    right      : 0;
+    padding    : 0 9999px 0 0;
+    margin     : 0 -9999px 0 0;
+    content    : "";
+    background : #4a5c6f;
+}
+.section3 .holder {
+    padding : 0 60px 0 47px;
+}
+.section3 .holder:after {
+    display : block;
+    clear   : both;
+    content : "";
+}
+.section3 .holder .img {
+    float    : right;
+    margin   : -13px 0 0 60px;
+    position : relative;
+    width    : 34.6%;
+}
+.section3 .holder .img img {
+    display : block;
+    height  : auto;
+    width   : 100%;
+}
+.section3 .holder .description {
+    overflow    : hidden;
+    color       : #444c57;
+    font-size   : 16px;
+    line-height : 30px;
+}
+.section3 h3 {
+    font-size      : 30px;
+    line-height    : 34px;
+    margin         : 0 0 11px;
+    text-transform : uppercase;
+    color          : #444c57;
+    font-family    : "Bodoni SvtyTwo ITC TT";
+    font-weight    : 400;
+    letter-spacing : 1px;
+}
+.section3 .holder .description p {
+    margin : 0;
+}
+.signup-area {
+    background      : url(images/bg-sign-up.jpg) no-repeat;
+    background-size : cover;
+    padding         : 45px 0;
+}
+.signup-area .block {
+    max-width   : 582px;
+    margin      : 0 auto;
+    background  : #fff;
+    padding     : 40px 68px;
+    box-sizing  : border-box;
+    text-align  : center;
+    color       : #4a5c6f;
+    line-height : 29px;
+    font-size   : 16px;
+}
+.signup-area h2 {
+    text-align  : center;
+    font-size   : 30px;
+    line-height : 34px;
+    margin      : 0 0 8px;
+    font-family : 'BodoniSvtyTwoSCITCTTBook-Regular';
+}
+.signup-area .block p {
+    margin : 0 0 20px;
+}
+.signup-area form {
+    border : 1px solid #4a5c6f;
+}
+.signup-area input[type="text"] {
+    float       : left;
+    width       : 75% !important;
+    background  : none;
+    border      : none;
+    height      : 45px !important;
+    color       : #4a5c6f !important;
+    font-size   : 14px !important;
+    line-height : 19px !important;
+    padding     : 13px 30px !important;
+    font-family : 'proxima-nova' !important;
+}
+.signup-area input[type="submit"] {
+    float          : right;
+    width          : 24% !important;
+    background     : #4a5c6f !important;
+    border         : none;
+    text-align     : center;
+    color          : #fff !important;
+    line-height    : 45px !important;
+    font-size      : 17px !important;
+    font-family    : "Bodoni SvtyTwo ITC TT" !important;
+    font-weight    : 400 !important;
+    text-transform : uppercase !important;
+    letter-spacing : 1px !important;
+    text-shadow    : 0 1px 0 #3b4a59 !important;
+    margin         : 0 !important;
+    padding        : 0 !important;
+}
+.signup-area input[type="submit"]:hover {
+    background : #9e6b6c !important;
+}
+.tagline {
+    padding     : 40px 0;
+    background  : #2c3743;
+    color       : #fff;
+    font-size   : 23px;
+    font-family : "Bodoni SvtyTwo ITC TT";
+    font-weight : 400;
+    line-height : 26px;
+}
+.tagline h2 {
+    font-size   : 46px;
+    line-height : 49px;
+    margin      : 0;
+    background  : url(images/heading2.png) no-repeat;
+    width       : 497px;
+    height      : 46px;
+    font-size   : 0;
+    line-height : 0;
+}
+.tagline p {
+    margin         : 0;
+    text-align     : right;
+    padding        : 0 55px 0 0;
+    letter-spacing : 3px;
+    word-spacing   : 3px;
+}
+#footer {
+    padding    : 42px 0;
+    background : #4a5c6f;
+    color      : #fff;
+}
+#footer a {
+    color : #fff;
+}
+#footer a:hover {
+    text-decoration : underline;
+}
+.col {
+    float       : left;
+    width       : 21%;
+    margin      : 0 0 0 48px;
+    font-size   : 17px;
+    line-height : 29px;
+}
+.col:first-child {
+    margin-left : 8px;
+    width       : 15%;
+}
+.col h2 {
+    font-size      : 20px;
+    line-height    : 24px;
+    margin         : 0 0 26px;
+    text-transform : uppercase;
+    font-family    : "Bodoni SvtyTwo ITC TT";
+    font-weight    : 400;
+}
+.footer-nav {
+    position : relative;
+}
+.footer-nav ul {
+    font-size      : 16px;
+    line-height    : 20px;
+    margin         : 0;
+    padding        : 0;
+    list-style     : none;
+    text-transform : uppercase;
+    letter-spacing : 3px;
+    font-family    : "Bodoni SvtyTwo ITC TT";
+    font-weight    : 400;
+}
+.footer-nav ul li {
+    margin : 0 0 8px;
+}
+.footer-nav ul.add {
+    margin     : 26px 0 0;
+    padding    : 23px 0 0;
+    border-top : 1px solid #fff;
+}
+.col .address {
+    margin : 0 0 25px;
+}
+.col.add {
+    width  : 23%;
+    margin : 0 0 0 58px;
+}
+.col.add span {
+    display     : block;
+    font-size   : 20px;
+    line-height : 30px;
+}
+.col.add2 {
+    width  : 25%;
+    margin : 0 0 0 71px;
+}
+.col.add3 {
+    text-align  : right;
+    width       : 22.8%;
+    margin-left : 0;
+    float       : right;
+}
+.col .social {
+    margin         : 0 0 23px;
+    padding        : 0;
+    list-style     : none !important;
+    font-size      : 20px;
+    line-height    : 22px;
+    text-transform : uppercase;
+    overflow       : hidden;
+    font-family    : "Bodoni SvtyTwo ITC TT";
+    font-weight    : 400;
+}
+.col .social li {
+    float          : right;
+    margin         : 0 0 0 9px;
+    letter-spacing : 1px;
+}
+.col .social li a:hover {
+    opacity    : .75;
+    -ms-filter : "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+}
+.col .social li.insta a {
+    font-size   : 0 !important;
+    line-height : 0 !important;
+    display     : block;
+    width       : 25px;
+    height      : 26px;
+    background  : url(images/ico-social.png) no-repeat 100% 0;
+}
+.col .social li.fb a {
+    font-size   : 0 !important;
+    line-height : 0 !important;
+    display     : block;
+    width       : 25px;
+    height      : 26px;
+    background  : url(images/ico-social.png) no-repeat;
+}
+.copy {
+    font-size   : 17px;
+    line-height : 20px;
+    font-family : 'proxima-nova';
+    text-align  : center;
+    margin      : 0;
+}
+.des {
+    display : block !important;
+}
+.mob {
+    display : none !important;
+}
+.visual.internal .inner2 {
+    vertical-align : bottom;
+    text-align     : left;
+}
+.visual.internal h2 {
+    color       : #fff;
+    margin      : 0;
+    font-family : "P22DeclrPRO", serif;
+    font-size   : 6em;
+    font-weight : 400;
+    line-height : .5em;
+    text-shadow : 0 7px 10px rgba(0, 0, 0, 0.75);
+}
+#content {
+    padding     : 40px 45px;
+    font-size   : 16px;
+    line-height : 30px;
+    color       : #444c57;
+}
+#content h1 {
+    color          : #784e4c;
+    font-size      : 48px;
+    line-height    : 56px;
+    margin         : 0 -45px 21px;
+    overflow       : hidden;
+    font-family    : "Bodoni SvtyTwo ITC TT";
+    font-weight    : 400;
+    text-transform : capitalize;
+}
+#content h1 span {
+    position       : relative;
+    display        : inline-block;
+    vertical-align : top;
+    padding-right  : 13px;
+}
+#content h1 span:after {
+    position   : absolute;
+    height     : 1px;
+    top        : 50%;
+    right      : 0;
+    padding    : 0 9999px 0 0;
+    margin     : 0 -9999px 0 0;
+    content    : "";
+    background : #995a4a;
+}
+#content h2 {
+    color          : #784e4c;
+    font-size      : 30px;
+    line-height    : 34px;
+    margin         : 0 0 40px;
+    overflow       : hidden;
+    font-family    : "Bodoni SvtyTwo ITC TT";
+    font-weight    : 400;
+    text-transform : uppercase;
+}
+#content p {
+    margin : 0 0 35px;
+}
+#content .alignleft {
+    float  : left;
+    margin : 0 40px 11px 0;
+}
+#content .alignright img, #content .alignleft img {
+    width     : 100%;
+    height    : auto;
+    display   : block;
+    max-width : 100%;
+}
+.post-thumbnail img {
+    max-width : 100%;
+    height    : auto;
+}
+#content .alignright {
+    float  : right;
+    margin : 10px 0 11px 40px;
+}
+.clear {
+    clear : both;
+}
+#content h2 {
+    color          : #784e4c;
+    font-size      : 26px;
+    line-height    : 30px;
+    margin         : 0 0 30px;
+    overflow       : hidden;
+    font-family    : "Bodoni SvtyTwo ITC TT";
+    font-weight    : 400;
+    text-transform : uppercase;
+}
+#content h3 {
+    font-size   : 26px;
+    line-height : 30px;
+    margin      : 0 0 20px;
+    font-weight : 400;
+}
+.soliloquy-outer-container, .soliloquy-container .soliloquy-caption {
+    max-height : 650px;
+    overflow   : hidden;
+}
+.tribe-bar-filters {
+    display : none;
+}
+.soliloquy-html-sentinel {
+    min-height : 75px !important;
+}
+.slide-nav-link {
+    position   : absolute;
+    right      : 0;
+    width      : 150px;
+    left       : initial;
+    background : none;
+    color      : #444c57;
+    top        : 10px;
+    font-size  : 18px;
+}
+.tribe-events-event-meta .column, .tribe-events-event-meta .tribe-events-meta-group {
+    margin : 20px 0;
+}
+
+#gform_wrapper_6, #gform_wrapper_7 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    border: 1px #a9a9a9 solid; 
+}
+
+#input_2_2 {
+    border: 0;
+}
+
+body .gform_wrapper ul li.field_description_below div.ginput_container_checkbox, body .gform_wrapper ul li.field_description_below div.ginput_container_radio, .gform_wrapper ul.gfield_checkbox, .gform_wrapper ul.gfield_radio, body .gform_wrapper .top_label div.ginput_container, #field_2_2 {
+    margin: 0 !important;
+}
+
+@media screen and ( max-width : 1272px ) {
+    .logo {
+        width        : 240px;
+        padding-left : 130px;
+        padding-top  : 8px;
+    }
+    .logo img {
+        max-width : 100%;
+        height    : auto;
+        display   : block;
+    }
+    /* logo reposition here */
+    .logo a:after {
+        left : -118px;
+        top  : -44px;
+    }
+
+}
+@media screen and ( max-width : 1194px ) {
+    .container {
+        padding : 0 10px;
+    }
+    body {
+        min-width : 320px;
+    }
+    #nav ul li {
+        margin-left : 29px;
+    }
+    .top-nav ul li {
+        margin-left : 20px;
+    }
+    .box-holder .box {
+        margin-left : 14px;
+    }
+    .section1 .holder {
+        padding : 0 0 25px;
+    }
+    #content {
+        padding : 30px 0;
+    }
+    #content h1 {
+        margin : 0 0 20px;
+    }
+    .col .social {
+        font-size : 12px;
+    }
+}
+@media screen and ( max-width : 999px ) {
+    .top-nav ul {
+        font-size : 12px;
+    }
+    body .search {
+        margin-left : 26px;
+    }
+    #nav ul {
+        font-size : 14px;
+    }
+    #nav ul li {
+        margin-left : 25px;
+    }
+    .section2 .row {
+        padding : 0;
+    }
+    .section3 .holder {
+        padding : 0;
+    }
+    .tagline p {
+        padding-right : 0;
+    }
+    .col:first-child {
+        width : 17%;
+    }
+    .footer-nav ul {
+        font-size : 12px;
+    }
+    .col.add {
+        margin-left : 30px;
+        width       : 29%;
+    }
+    .col {
+        font-size   : 12px;
+        line-height : 15px;
+    }
+    .footer-nav ul li {
+        margin : 0;
+    }
+    .col.add2 {
+        margin-left : 15px;
+    }
+    .col.add3 {
+        width       : 20%;
+        margin-left : 10px;
+    }
+    #footer {
+        padding : 20px 0;
+    }
+    .section2 .description {
+        line-height : 20px;
+    }
+    .section1 .holder:after {
+        right : 0;
+    }
+    #nav ul ul {
+        font-size : 12px;
+        width     : 150px;
+    }
+    .top-nav ul {
+        font-size : 10px;
+    }
+    .visual.internal .inner2 {
+        vertical-align : bottom;
+        padding-bottom : 10px;
+        text-align     : left;
+    }
+    .col.add3 {
+        width : 27%;
+    }
+    .col.add3 span {
+        display : block;
+    }
+    .col.add2 {
+        width : 19%;
+    }
+}
+@media screen and ( max-width : 800px ) {
+    #nav, .topbar, .col.first {
+        display : none;
+    }
+    /* logo reposition here */
+    .logo a:after {
+        left : -118px;
+        top  : -26px;
+    }
+    .header-content {
+        padding-top    : 20px;
+        padding-bottom : 20px;
+    }
+    .signup-area input[type="submit"] {
+        font-size : 12px !important;
+    }
+    .signup-area input[type="text"] {
+        padding : 13px 10px !important;
+    }
+}
+@media screen and ( max-width : 767px ) {
+    /*.visual img {
+
+
+
+            display:block;
+
+
+
+            width:1000px;
+
+
+
+            left:50%;
+
+
+
+            position:relative;
+
+
+
+            margin:0 0 0 -500px;
+
+
+
+        }*/
+    .visual h1 {
+        background-size : 100% auto;
+        width           : 300px;
+        height          : 96px;
+    }
+    .visual span {
+        font-size     : 20px;
+        line-height   : 24px;
+        padding-right : 77px;
+    }
+    .tagline h2 {
+        background-size : 100% auto;
+        width           : 300px;
+        height          : 34px;
+        margin          : 0 auto;
+    }
+    .tagline p {
+        text-align : center;
+    }
+    .section1 {
+        padding : 15px 0;
+    }
+    .box-holder .box, .section2 .img {
+        float  : none;
+        width  : 100%;
+        margin : 0 0 20px;
+    }
+    .section3 .holder {
+        display : table;
+        width   : 100%;
+        height  : 100%;
+    }
+    .section3 .holder .description {
+        padding : 0 0 15px;
+    }
+    .signup-area .block {
+        padding : 20px 10px;
+        margin  : 0 auto;
+    }
+    .tagline {
+        font-size      : 12px;
+        line-height    : 17px;
+        word-spacing   : 0;
+        letter-spacing : 1px;
+    }
+    .tagline p {
+        letter-spacing : 1px;
+    }
+    .section3 .holder .img {
+        float   : none;
+        display : table-footer-group;
+    }
+    .col {
+        float      : none !important;
+        width      : 100% !important;
+        text-align : center !important;
+        margin     : 0 0 15px !important;
+    }
+    .col h2 {
+        margin : 0 0 10px;
+    }
+    .col p {
+        margin : 0;
+    }
+    .col .social li {
+        display        : inline-block;
+        vertical-align : top;
+        float          : none;
+    }
+    .col.add span {
+        font-size   : 14px;
+        line-height : 20px;
+    }
+    .col .social {
+        margin : 0 0 10px;
+    }
+    .copy {
+        font-size   : 12px;
+        line-height : 15px;
+    }
+    #content .alignright {
+        max-width : 50%;
+        height    : auto;
+        margin    : 0 0 5px 10px;
+    }
+    #content .alignleft {
+        max-width : 50%;
+        height    : auto;
+        margin    : 0 10px 5px 0;
+    }
+    #content .aligncenter {
+        max-width : 100%;
+        height    : auto;
+        margin    : 0 10px 5px 10px;
+    }
+    #content {
+        font-size   : 13px;
+        line-height : 1.4em;
+    }
+    #content p {
+        margin : 0 0 20px;
+    }
+    #content h2 {
+        margin      : 0 0 20px;
+        font-size   : 22px;
+        line-height : 26px;
+    }
+    #content ul li {
+        margin    : 0 0 8px;
+        font-size : 11px;
+    }
+    #content h1 {
+        font-size   : 34px;
+        line-height : 38px;
+    }
+    .visual.internal h2 {
+        font-size : 40px;
+    }
+}
+@media screen and (max-width : 530px) {
+    .logo img {
+        display : none;
+    }
+    .logo {
+        width   : 107px;
+        padding : 0 0 50px;
+    }
+    .logo a:after {
+        top  : 0;
+        left : 0;
+    }
+    .header-content {
+        padding-top : 2px;
+    }
+}
+@media screen and ( max-width : 479px ) {
+    .section1 {
+        text-align : center;
+    }
+    .section1 h2 {
+        padding-left : 0;
+    }
+    .box-holder .box {
+        line-height : 20px;
+    }
+    .section2 {
+        text-align : center;
+    }
+    .btn2 {
+        float   : none;
+        margin  : 0 auto;
+        display : block;
+    }
+    .section2 h2 {
+        font-size   : 25px;
+        line-height : 30px;
+    }
+    .section3 {
+        text-align : center;
+    }
+    .section3 h2 {
+        margin-bottom : 15px;
+    }
+    .signup-area input[type="submit"] {
+        font-size : 12px;
+    }
+    .signup-area .block {
+        font-size   : 12px;
+        line-height : 16px;
+    }
+    .section1 h2 {
+        font-size     : 30px;
+        line-height   : 34px;
+        margin-bottom : 10px;
+    }
+    .section1 .holder {
+        font-size   : 14px;
+        line-height : 18px;
+    }
+    .signup-area input[type="text"] {
+        padding : 13px 10px;
+    }
+    .section3 h3 {
+        font-size   : 20px;
+        line-height : 24px;
+    }
+    .section3 .holder .description {
+        font-size   : 13px;
+        line-height : 20px;
+    }
+    .section2 .description h3 {
+        font-size : 20px;
+    }
+    .section2 .description .more {
+        font-size   : 14px;
+        line-height : 18px;
+    }
+    .section3 .description .more {
+        font-size   : 14px;
+        line-height : 18px;
+    }
+    .visual span {
+        padding-right : 40px;
+        font-size     : 16px;
+    }
+    .signup-area .block {
+        margin : 0 10px;
+    }
+    /*	.visual.internal h2 {
+            width: 300px;
+            background-size: 100% auto;
+            height: 98px;
+        }*/
+}
+@media screen and ( max-width : 600px ) {
+    .tagline .soliloquy-container .soliloquy-caption, .tagline .soliloquy-container .soliloquy-controls-auto, .tagline .soliloquy-container .soliloquy-pager {
+        display : block !important;
+    }
+}
+#gform_wrapper_2 {
+    max-width : 100%;
+    margin    : 0 auto;
+}
+#gform_wrapper_2 label {
+    display : none;
+}
+#gform_wrapper_2 .ginput_container {
+    margin : 0 !important;
+}
+#gform_wrapper_2 .gform_footer {
+    clear   : none !important;
+    margin  : 0 !important;
+    padding : 0 !important;
+}
+#gform_wrapper_2 form {
+    overflow : hidden;
+}
+.gform_wrapper div.validation_error {
+    width : 100% !important;
+}
+.gform_wrapper .top_label .gfield_error {
+    float : left;
+    width : 76% !important;
+}
+.gfield_error input[type="text"] {
+    width : 101% !important;
+}
+.larger {
+    font-size      : 20px;
+    line-height    : 22px;
+] btn4display: block;
+    margin         : 0 auto;
+    font-family    : 'BodoniSvtyTwoITCTTBold-Regular';
+    font-size      : 17px;
+    line-height    : 20px;
+    text-align     : center;
+    width          : 150px;
+    color          : #fff;
+    padding        : 14px 0;
+    background     : #9e6b6c;
+    letter-spacing : 1px;
+    position       : relative;
+    z-index        : 99;
+    text-shadow    : 0 1px 0 #7e5656;
+}
+.btn4:hover {
+    background : #2c3743;
+}
+.section3 .description .more {
+    color          : #4a5c6f;
+    font-family    : "proxima-nova";
+    font-size      : 20px;
+    font-weight    : 700;
+    letter-spacing : 1px;
+    line-height    : 24px;
+    text-transform : uppercase;
+}
+a:[title="button"] {
+    display        : block;
+    font-family    : 'BodoniSvtyTwoITCTTBold-Regular';
+    font-size      : 17px;
+    line-height    : 20px;
+    text-align     : center;
+    color          : #fff;
+    padding        : 14px 0;
+    background     : #9e6b6c;
+    letter-spacing : 1px;
+    z-index        : 99;
+    text-shadow    : 0 1px 0 #7e5656;
+}
+
+.tribe-events-list .tribe-events-event-image+div.tribe-events-content {
+    padding: 0;
+}
+ 
+.tribe-events-list .tribe-events-event-image {
+    max-width: 30%;
+}
+.hentry {padding-top:0}
+.topbar .search input[type="submit"] {
+	padding:0;
+}
+.tribe-events-single-section h2 {
+	font-size: 20px !important;
+	margin-bottom: 8px !important;
+}
+.tribe-events .tribe-events-calendar-list__event {
+	flex-direction: row !important;
+	box-shadow: none !important
+}
+.tribe-events .tribe-events-calendar-list__event a {
+	border-bottom: none !important
+}
+.tribe-events .tribe-events-calendar-list__event-date-tag {
+	width: 62px !important
+}
+.tribe-common .tribe-common-g-row {
+	flex-wrap: nowrap !important
+}
+.tribe-common .tribe-common-g-col {
+	width: auto !important
+}
+.tribe-events-calendar-list__month-separator {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    position: relative !important;
+    overflow: visible !important;
+    margin: 40px 0 60px !important;
+}
+.tribe-events-calendar-list__month-separator time {
+    position: absolute;
+    top: -20px;
+    display: table;
+    padding: 0 30px;
+    height: 27px;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 24px !important;
+    color: #9e6b6c !important
+}
+@media (max-width: 992px) {
+    .tribe-common .tribe-common-g-col {
+        flex-wrap: wrap;
+    }
+}
+.evntstitle {
+    display: none;
+}
+.post-type-archive-tribe_events .evntstitle {
+    display: block;
+}
+.tribe-events-calendar-list__event-title-link {
+    color: #4a5c6f !important;
+    font-family: 'BodoniSvtyTwoITCTTBold-Regular' !important;
+}
+.tribe-events-calendar-list__month-separator time {
+    color: #784e4c !important;
+font-size: 26px !important;
+line-height: 30px !important;
+overflow: hidden !important;
+font-family: "Bodoni SvtyTwo ITC TT" !important;
+font-weight: 400 !important;
+text-transform: uppercase !important;
+}
+.tribe-events-c-top-bar__datepicker-mobile {
+    font-family: 'BodoniSvtyTwoITCTTBold-Regular' !important;
+    color: #9e6b6c !important;
+    text-transform: none !important
+}
+.tribe-events-calendar-list__event-description p,
+.tribe-events-content p {
+    font-size: 17px !important;
+    line-height: 30px !important;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif !important;
+}
+.tribe-events-c-subscribe-dropdown__container {
+    display: none !important;
+}
+
+/* Hide broken date showing behind images */
+.tribe-events-calendar-list__event-date-tag {
+    display: none;
+}
