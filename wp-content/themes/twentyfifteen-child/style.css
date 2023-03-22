@@ -1584,9 +1584,9 @@ text-transform: uppercase !important;
 }
 .tribe-events-calendar-list__event-description p,
 .tribe-events-content p {
-    font-size: 17px !important;
+    /* font-size: 17px !important;
     line-height: 30px !important;
-    font-family: proxima-nova, Arial, Helvetica, sans-serif !important;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif !important; */
 }
 .tribe-events-c-subscribe-dropdown__container {
     display: none !important;
@@ -1595,4 +1595,23 @@ text-transform: uppercase !important;
 /* Hide broken date showing behind images */
 .tribe-events-calendar-list__event-date-tag {
     display: none;
+}
+
+.tribe-events .tribe-events-calendar-list__event-details {
+    flex: auto;
+}
+
+.tribe-events-calendar-list__event-title {
+    font-family: 'BodoniSvtyTwoITCTTBold-Regular';
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 0 0 3px;
+    letter-spacing: 1px;
+}
+
+.tribe-events-calendar-list__event-description p {
+    font-size: 16px !important;
+    line-height: 30px;
+    font-family: 'proxima-nova';
 }
